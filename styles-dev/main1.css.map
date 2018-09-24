@@ -1,1 +1,1 @@
-{"version":3,"sources":["main1.less"],"names":[],"mappings":"AAAA;EACE,uBAAA","file":"main1.css"}
+{"version":3,"sources":["main1.less"],"names":[],"mappings":"AAAA;EACE,uBAAA","sourcesContent":["body {\n  background-color: black;\n}"],"file":"main1.css"}
