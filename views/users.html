@@ -1,0 +1,91 @@
+
+<div class="item-crud container" data-controller="crud-controller" data-resource="http://localhost:8080/artflowdesign/admin/users/rest" data-messages="localhost:8080/artflowdesign/messages" name="" id="">
+
+    <header>
+        <h1>Admin felhasználók</h1>
+    </header>
+
+    <div data-controller="messages-controller" data-resource="http://localhost:8080/artflowdesign/messages">
+        <div name="messages" class="messages"></div>
+        <script name="tpl-error-message" type="text/html">
+            <div class="message error">${message}</div>
+        </script>
+        <script name="tpl-success-message" type="text/html">
+            <div class="message success">${message}</div>
+        </script>
+    </div>
+
+
+    <div name="create-item" class="create-item section hidden">
+        <h1>Új</h1>
+
+        <form name="item-form" class="item-form"><label>Felhasznalonev</label>
+            <input type="text" name="username" />
+            <label>Jelszo</label>
+            <input type="password" name="password" /><div class="form-actions"><button class="submit-item">Submit</button></div>
+        </form>
+    </div>
+
+
+    <div name="edit-item" class="edit-item section hidden">
+        <h1>Módosít</h1>
+
+        <form name="item-form" class="item-form">
+            <input type="hidden" name="id" /><label>Felhasznalonev</label>
+            <input type="text" name="username" />
+            <label>Jelszo</label>
+            <input type="password" name="password" />
+            <div class="form-actions"><button class="submit-item">Módosít</button></div>
+        </form>
+    </div>
+
+
+    <div name="itemtable" class="section itemtable" data-controller="table-controller" data-resource="http://localhost:8080/artflowdesign/admin/users/rest">
+        <button class="new-item" name="new-item">Új</button>
+
+        <table name="table">
+            <colgroup>
+            </colgroup>
+            <thead>
+            <tr><td>Felhasznalonev</td>
+
+                <td>Mutat</td>
+                <td>Módosít</td>
+                <td>Töröl</td>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nincs adat</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        <div name="pagination" class="pagination">
+            <nav name="tblNav" class="tblNav">
+                <a href="#" name="tablePrevPage" class="tablePrevPage"><</a>
+                <a href="#" name="tableNextPage" class="tableNextPage">></a>
+            </nav>
+            <script name="tblPage" type="text/html">
+                <a href="#" class="tablePage" data-page="${page}">${page}</a>
+            </script>
+        </div>
+        <script name="tpl-row" type="text/html"><td>${username}</td>
+
+        <td><a class="show-item button success" href="#" data-id="${id}">Mutat</a></td>
+        <td><a class="modify-item button warning" href="#" data-id="${id}">Módosít</a></td>
+        <td><a class="delete-item button danger" href="#" data-id="${id}">Töröl</a></td>
+
+        </script>
+    </div>
+
+
+    <div class="show-section section" name="show-item"></div>
+    <script name="tpl-show-item" type="text/html">
+        <label>Felhasznalonev:</label>
+        <p>${username}</p>
+    </script>
+
+</div>
+

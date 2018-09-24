@@ -1,0 +1,452 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+h1:first-child {
+    margin-top: 0;
+}
+
+pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+button, .button, .menu-button {
+    display: inline-block;
+    color: inherit;
+    background-color: #add8e6;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+}
+
+button:hover, .button:hover {
+    background-color: #76a7b7;
+}
+
+form .form-actions {
+    margin-top: 15px;
+}
+
+.success, button.new-item {
+    background-color: #a8e348;
+    color: #FFFFFF;
+}
+
+button.new-item {
+    margin-bottom: 9px;
+}
+
+.success:hover, button.new-item:hover {
+    background-color: #97cc41;
+}
+
+.warning, button.submit-item {
+    background-color: #f9aa0b;
+    color: #FFFFFF;
+}
+.warning:hover, button.submit-item:hover {
+    background-color: #e0990a;
+}
+
+.normal {
+    background-color: #aaaaaa;
+    color: #FFFFFF;
+}
+.normal:hover {
+    background-color: #999999;
+}
+.danger {
+    background-color: #ff2121;
+    color: #FFFFFF;
+}
+.danger:hover {
+    background-color: #e61e1e;
+}
+
+table {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px 8px;
+}
+table td {
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-align: center; */
+}
+thead {
+    background-color: #f1f1f1;
+}
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.section,
+.main-area .container > header
+{
+    padding: 10px 10px;
+    align-self: stretch;
+}
+
+.main-area .container > header
+{
+    border-bottom: solid 1px #f1f1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+.container,
+body > header,
+main,
+body > footer {
+    display: flex;
+    flex-direction: row;
+}
+
+body > header h1 {
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.item-crud {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+input[type="checkbox"] {
+    margin-top: 20px;
+}
+
+input.intable {
+    margin: 0;
+}
+
+label.checkbox-label {
+    display: inline;
+}
+
+label.checkbox-label:after {
+    content: '';
+    display: block;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 50em;
+    height: 300px;
+}
+
+form .trumbowyg-box {
+    margin-top: 3px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+}
+
+.modal:before {
+    content: '';
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+.modal:after {
+    content: '';
+    flex-basis: 0px;
+    flex-grow: 2;
+}
+
+.modal:not(.shown) {
+    display: none;
+}
+.modal > div {
+    background: #FFFFFF;
+}
+
+.section.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-self: stretch; */
+    /* justify-content: stretch; */
+    flex-grow: 1;
+}
+
+.section.login:before {
+    content: '';
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.section.login:after {
+    content: '';
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+.section.login > div {
+
+    padding: 20px 40px;
+    border: 2px solid #009688;
+}
+
+.messages
+{
+    padding: 10px 10px;
+    align-self: stretch;
+}
+
+.messages {
+    padding-bottom: 0px;
+}
+
+.message {
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+.message.error {
+    color: #e61e1e;
+    background-color: #ffc9c9;
+}
+
+.message.success {
+    color: #467101;
+    background-color: #cbe89b;
+}
+
+
+.modal .login {
+    padding: 20px 40px;
+    min-width: 240px;
+    align-self: auto;
+    flex-grow: 0;
+}
+
+.section.login p {
+    margin-top: 0;
+}
+
+.modal .login h1 {
+    margin-top: 0;
+}
+
+main {flex-grow: 1;}
+
+body > header, body > footer {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    background-color: #00c9b6;
+    color: #fff;
+    font-weight: 600;
+    flex-grow: 0;
+    padding: 10px 0 10px 0;
+}
+
+.main-area {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* justify-content: center; */
+}
+
+.main-area img {
+    width: 100%;
+}
+
+.side-menu a {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 8px 16px;
+    display: block;
+    text-align: left;
+}
+
+.side-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.loading {
+    min-height: 50vh;
+    position: relative;
+}
+.loading:after {
+    content: "";
+    text-align: center;
+    background-color: #ffffff;
+    background: url("../images/loading_med.gif") no-repeat center;
+    background-color: #FFFBF5;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.loading * {
+    /* display: none; */
+}
+
+.pagination {
+    margin: 10px 0 0 0;
+}
+.pagination nav {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.pagination .tblPages {
+    display: flex;
+}
+.pagination .tablePrevPage,
+.pagination .tableNextPage,
+.pagination .tablePage {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 4px 12px;
+}
+.pagination a {
+    color: inherit;
+    background-color: #f1f1f1;
+}
+.pagination a:hover {
+    background-color: #dedede;
+}
+.pagination .current {
+    background-color: #9fe500;
+    color: #FFFFFF;
+}
+.pagination .current:hover {
+    background-color: #97cc41;
+    color: #FFFFFF;
+}
+
+.progress-bar {
+
+    background: #add8e6;
+    margin: 10px 0 10px 0;
+}
+
+.progress-bar > div {
+    height: 3px;
+    background: #009688;
+}
+
+.image-dnd {
+    position: relative;
+    flex-grow: 1;
+}
+
+.dnd-container {
+    display: none;
+}
+
+.dnd-dragover .dnd-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(104, 119, 117, 0.72);
+    padding: 30px;
+}
+
+.dnd-filename {
+    color: wheat;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.dnd-progress {
+    width: 100%;
+    margin-left: 20px;
+    background: #add8e6;
+    margin: 10px 0 10px 0;
+}
+
+.dnd-progress > div {
+    height: 5px;
+    background: #009688;
+    width: 0;
+}
+
+table img.table-preview {
+    max-width: 100px;
+    max-height: 100px;
+}

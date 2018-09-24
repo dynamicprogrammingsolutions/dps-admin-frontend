@@ -1,0 +1,41 @@
+{
+  "name": "dps-ff",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build-production:js": "webpack --env production",
+    "build:js": "webpack --env development",
+    "watch:js": "webpack --watch --env development",
+    "start": "webpack-dev-server --env development",
+    "watch:scss": "gulp watch_scss",
+    "watch:less": "./node_modules/less-watch-compiler/dist/less-watch-compiler.js",
+    "watch:css": "gulp watch_css",
+    "watch": "npm-run-all --parallel watch:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^7.1.3",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1",
+    "less": "^3.8.1",
+    "less-watch-compiler": "^1.11.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-clean": "^1.1.0",
+    "postcss-css-variables": "^0.8.1",
+    "postcss-discard-duplicates": "^2.1.0",
+    "postcss-import": "^11.1.0",
+    "run-sequence": "^2.2.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

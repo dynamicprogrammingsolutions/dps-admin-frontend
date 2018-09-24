@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","sources":["main.scss","include/inc.scss"],"sourcesContent":["@import \"include/inc\";\n\nbody {\n  background: aqua;\n}","body {\n  background: beige;\n}"],"names":[],"mappings":"ACAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAK,GAClB;;ADAD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,IAAI,GACjB"}

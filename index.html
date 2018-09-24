@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DPS-FF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles-dev/normalize.css">
+    <link rel="stylesheet" href="styles-dev/admin.css">
+</head>
+<body>
+
+<header>
+    <h1>DPS FF</h1>
+</header>
+
+<main>
+    <div class="side-menu" data-controller="menu" data-content="#content" data-not-found="#content-not-found">
+        <a class="menu-button" data-view="views/users.html" href="#users">Admin Users</a>
+        <a class="menu-button" data-view="views/settings.html" href="#settings">Settings</a>
+        <a class="menu-button" data-view="views/account.html" href="#account">Account</a>
+    </div>
+    <div class="main-area" id="content">
+    </div>
+    <script id="content-not-found" type="text/html">
+        <h1>404 Not found</h1>
+    </script>
+</main>
+
+<footer>
+    <p>Copyright</p>
+</footer>
+
+<div class="modal">
+    <div class="section login" data-controller="login-controller" data-url="admin/auth/login">
+        <form>
+            <p>Login</p>
+            <label>username</label>
+            <input type="text" name="username"/>
+            <label>password</label>
+            <input type="password" name="password"/>
+            <label></label>
+            <button>Login</button>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts-dev/runtime.js"></script>
+<script type="text/javascript" src="scripts-dev/main.js"></script>
+
+</body>
+</html>
