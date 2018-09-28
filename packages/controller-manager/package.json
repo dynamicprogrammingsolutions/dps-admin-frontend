@@ -1,0 +1,11 @@
+{
+  "name": "@dynamicprogrammingsolutions/controller-manager",
+  "version": "0.0.2",
+  "main": "controller-manager.js",
+  "author": "",
+  "license": "ISC",
+  "description": "## Description",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
