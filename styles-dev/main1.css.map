@@ -1,1 +1,1 @@
-{"version":3,"sources":["main1.less"],"names":[],"mappings":"AAAA;EACE,uBAAA","sourcesContent":["body {\n  background-color: black;\n}"],"file":"main1.css"}
+{"version":3,"sources":["include/inc1.less","main1.less"],"names":[],"mappings":"AAAA;EACE,mBAAA;;ACCF;EACE,uBAAA","sourcesContent":["body {\n  background: #00c9b6;\n}","@import \"include/inc1\";\n\nbody {\n  background-color: black;\n}"],"file":"main1.css"}

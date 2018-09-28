@@ -1,4 +1,6 @@
-import {loadControllers} from "./controller-loader.js"
+//import {loadControllers} from "./controller-loader.js"
+import resolver from './controllers/resolver.js';
+import controllerManager from '../packages/controller-manager'
 
 import(
     /* webpackChunkName: "node_modules/jquery" */
@@ -7,7 +9,10 @@ import(
     window['$'] = $;
     window['jQuery'] = $;
 
-    loadControllers(document);
+    controllerManager.register(resolver);
+    controllerManager.load(document);
+
+    //loadControllers(document);
 
 })
 
